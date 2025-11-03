@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Invoice #{{InvoiceId}}</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6;">
+    <h2>Invoice #{{InvoiceId}}</h2>
+    <p>Dear {{FullName}},</p>
+    <p>Thank you for using our services.</p>
+
+    <p><b>Date Issued:</b> {{DateIssued}}</p>
+    <p><b>Total Amount:</b> {{TotalAmount}} (VAT: {{VAT}}%)</p>
+
+    <hr />
+    <h3>Service Details</h3>
+    <ul>
+        {{ServiceName}}
+    </ul>
+
+    <p>
+        Best regards,<br />
+        <b>Car Management System</b>
+    </p>
+</body>
+</html>
